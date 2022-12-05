@@ -22,9 +22,27 @@
     var victorias = parseInt(prompt(" Informe la cantidad de victorias: "));
     var empates = parseInt(prompt("Informe la cantidad de empates: "));
 
-    puntosTotales = victorias * 3 + empates;
+    puntosTotales = (victorias * 3) + empates;
 
     imprimir("El total de los puntos del equipo es: " + puntosTotales);
+
+    if (puntosTotales > 28) {
+
+        imprimir("El equipo está mejor que el año pasado");
+
+    }
+
+    if (puntosTotales < 28) {
+
+        imprimir("El equipo está peor que el año pasado");
+
+    }
+
+    if (puntosTotales == 28) {
+
+        imprimir("El equipo está igual que el año pasado");
+
+    }
 
 
 </script>
