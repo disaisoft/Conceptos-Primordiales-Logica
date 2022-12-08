@@ -29,19 +29,34 @@
 
         if (numeroPensado == numeroLanzado) {
 
-        imprimir("Usted Acertó");
+        alert("Usted acertó, en el intento " + intentos + " el numero pensado era " + numeroPensado);
+        break;
 
         }
 
         else {
 
-        alert("Usted erró, el numero pensado era, " + numeroPensado);
+            alert("Usted erró");
 
         }
 
         contador++;
 
     }
+    
+    if (numeroPensado == numeroLanzado) {
 
+    imprimir("Usted acertó, en el intento " + intentos + " el numero pensado era " + numeroPensado);
+
+
+    }   
+
+    else {
+
+    imprimir("Usted erró, el numero pensado era " + numeroPensado);
+
+    }
+
+    imprimir("FIN!");
     
 </script>
